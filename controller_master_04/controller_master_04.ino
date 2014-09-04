@@ -80,7 +80,7 @@ void loop()
     if (incoming > 0) vend = true;
     else vend = false; 
   }
-  else vend = false; 
+
   // mouse movement
   steer.read();
   float _xM = (roll()-zeroX);
@@ -95,7 +95,7 @@ void loop()
 
   // mouse clicks
   horn.update();
-  byte clickChange = 0;
+  /*byte clickChange = 0;
   if (horn.fallingEdge()) {     // mouse press
     leftClick = 1;
     clickChange = 1;
@@ -104,7 +104,7 @@ void loop()
     leftClick = 0;
     clickChange = 1;
   }
-  if (clickChange) Mouse.set_buttons(leftClick,0,0);
+  if (clickChange) Mouse.set_buttons(leftClick,0,0);*/
 
   // other buttons
   calibrate.update();
@@ -116,6 +116,7 @@ void loop()
   }
   if (modeSwitch.fallingEdge()) Keyboard.print("c");
   if (resetGame.fallingEdge()) Keyboard.print("r");
+  if (horn.fallingEdge()) Keyboard.print(" ");
 
   // joystick movements
   xJ = analogRead(xPin);
