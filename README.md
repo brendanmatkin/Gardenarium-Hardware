@@ -23,10 +23,14 @@ SCRIPTS folder contains UNITY C# scripts to send OSC data (for pop vender).
 SCRIPTS INFO
 ============
 
-Osc.cs & UDPPacketIO.cs should be placed in Assets/Plugins.
+* Osc.cs & UDPPacketIO.cs should be placed in Assets/Plugins.
 
-OSC_Utility2.cs and Destroypop2.cs should be located in Assets/Scripts. 
+* OSC_Utility2.cs and Destroypop2.cs should be located in Assets/Scripts. 
 
 *** ALL OTHER COPIES OF THESE SCRIPTS SHOULD BE DELETED ***
 
 *** ALL OLD VERSIONS (including .JS) SHOULD BE DELETED ***
+
+* Destroypop2.cs should be added to each pop object.
+
+* Osc.cs, UDPPacketIO.cs, & OSC_Utility2.cs should be added to a new parent object for the pop objects.  You can give this object as many pop children as you want (so long as they each have Destroypop2.cs)
