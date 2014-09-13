@@ -24,7 +24,9 @@ SCRIPTS INFO
 ============
 
 Osc.cs & UDPPacketIO.cs should be placed in Assets/Plugins.
+
 OSC_Utility2.cs and Destroypop2.cs should be located in Assets/Scripts. 
 
 *** ALL OTHER COPIES OF THESE SCRIPTS SHOULD BE DELETED ***
+
 *** ALL OLD VERSIONS (including .JS) SHOULD BE DELETED ***
