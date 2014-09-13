@@ -27,10 +27,14 @@ public class OSC_Utility2 : MonoBehaviour {
 
 
 	public void  Update (){
-		Destroypop2 destroypop2 = GetComponent<Destroypop2>();
+		Destroypop2 destroypop2 = GetComponentInChildren<Destroypop2>();
+		//Destroypop3 destroypop3 = GetComponentInChildren<Destroypop3>();
 		bool vender = destroypop2.vend;
+		// bool vender3 = destroypop3.vend;
 		if(vender == true) oscHandler.Send(Osc.StringToOscMessage("/vend 1"));
+		//if(vender3 == true) oscHandler.Send(Osc.StringToOscMessage("/vend 1"));
 		destroypop2.vend = false;
+		//destroypop3.vend = false;
 	}	
 
 }
